@@ -18,7 +18,7 @@ const WeatherConditions = ({ query }) => {
   }, [query]);
 
   const uppercaseFirst = (str) => {
-    return str[0].toUpperCase() + str.substring(1)
+    return str[0].toUpperCase() + str.substring(1);
   };
 
   useEffect(() => {

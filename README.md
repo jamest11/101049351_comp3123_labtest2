@@ -2,7 +2,9 @@
 
 **James Tory - 101049351**
 
-OpenWeatherMap API key stored as an environment variable (not in repository)
+This app displays the current Toronto weather and allows the user to search a location with the OpenWeatherMap API
+
+OpenWeatherMap API key is stored as an environment variable (not in repository)
 
 GitHub Pages deployment can be viewed [here](https://jamest11.github.io/101049351_comp3123_labtest2/)
 

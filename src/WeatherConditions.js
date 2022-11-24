@@ -50,7 +50,7 @@ const WeatherConditions = ({ query }) => {
               <Button size="small" color="inherit" onClick={handleRefresh}>Refresh</Button>
             }>
             <AlertTitle>Error</AlertTitle>
-            Unable to fetch forecast for location <strong>{query}</strong>
+            Unable to fetch weather for location <strong>{query}</strong>
           </Alert>
         </Box>
       ) : (

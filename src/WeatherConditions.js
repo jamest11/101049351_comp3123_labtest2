@@ -17,6 +17,10 @@ const WeatherConditions = ({ query }) => {
     setDate(new Date(res.data.dt * 1000));
   }, [query]);
 
+  const uppercaseFirst = (str) => {
+    return str[0].toUpperCase() + str.substring(1)
+  };
+
   useEffect(() => {
     fetchData()
       .catch(err => setError(true))
@@ -54,8 +58,8 @@ const WeatherConditions = ({ query }) => {
           <Box
             component={Paper}
             sx={{
-              display: 'flex', flexDirection: 'column', align: 'flex-start',
-              width: 'fit-content', minWidth: 160,  minHeight: 200,
+              display: 'flex', flexDirection: 'column', align: 'flex-start', overflowWrap: 'anywhere',
+              width: 'fit-content', minWidth: 160,  minHeight: 200, maxWidth: 200,
               py: 2, px: 3, backgroundColor: '#b3e5fc', borderRadius: 10
             }}
           >
@@ -68,7 +72,7 @@ const WeatherConditions = ({ query }) => {
                   sx={{ width: 72, height: 72 }}
                 />
                 <Typography variant="h4">{conditions.main.temp.toFixed(0)}°C</Typography>
-                <Typography>{conditions.weather[0].main}</Typography>
+                <Typography>{uppercaseFirst(conditions.weather[0].description)}</Typography>
               </>
             )}
           </Box>

@@ -2,20 +2,24 @@
 
 **James Tory - 101049351**
 
+OpenWeatherMap API key stored as an environment variable (not in repository)
+
+GitHub Pages deployment can be viewed [here](https://jamest11.github.io/101049351_comp3123_labtest2/)
+
 ## Screenshots
 
-<p align = "center"><strong>S1: Toronto Weather Conditions<strong></p>
+**S1: Toronto Weather Conditions**
 
 ![Screenshot 1](screenshots/s1.png?raw=true)
 
-<p align = "center"><strong>S2: Query OpenWeatherMap API<strong></p>
+**S2: Query OpenWeatherMap API**
 
 ![Screenshot 2](screenshots/s2.png?raw=true)
 
-<p align = "center"><strong>S3: Error message if weather cannot be fetched from API<strong></p>
+**S3: Error message if weather cannot be fetched from API**
 
 ![Screenshot 3](screenshots/s3.png?raw=true)
 
-<p align = "center"><strong>S4: Postman Request<strong></p>
+**S4: Postman Request**
 
 ![Screenshot 4](screenshots/s4.png?raw=true)

@@ -6,6 +6,7 @@ import './App.css';
 const App = () => {
   const [query, setQuery] = useState();
   const [queryField, setQueryField] = useState();
+  console.log(process.env);
 
   const handleChange = (event) => {
     setQueryField(event.target.value);

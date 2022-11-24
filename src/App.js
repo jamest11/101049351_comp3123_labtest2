@@ -6,7 +6,6 @@ import './App.css';
 const App = () => {
   const [query, setQuery] = useState();
   const [queryField, setQueryField] = useState();
-  console.log(process.env);
 
   const handleChange = (event) => {
     setQueryField(event.target.value);
@@ -20,7 +19,7 @@ const App = () => {
     <Container component="main">
       <Box component={Paper} sx={{width: 'fit-content', mx: 'auto', my: 2, p: 4, borderRadius: 10}}>
         <Box display="flex" flexDirection="column" alignItems="center">
-          <Typography variant="h4" my={2}>Toronto Weather Conditions</Typography>
+          <Typography variant="h4" mb={2}>Toronto Weather Conditions</Typography>
           <WeatherConditions query={'Toronto'}/>
           <Typography variant="h4" my={2}>City Weather Search</Typography>
           <Box width="fit-content" minWidth={300} mb={2} borderRadius={5}>

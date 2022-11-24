@@ -13,8 +13,8 @@ const WeatherConditions = ({ query }) => {
     setError(false);
 
     const res = await getWeatherByQuery(query);
-    setConditions(res.data)
-    setDate(new Date(res.data.dt * 1000))
+    setConditions(res.data);
+    setDate(new Date(res.data.dt * 1000));
   }, [query]);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const WeatherConditions = ({ query }) => {
     fetchData()
       .catch(err => setError(true))
       .finally(() => setLoading(false));
-  }
+  };
 
   return (
     <Box
@@ -88,7 +88,7 @@ const WeatherConditions = ({ query }) => {
                 <Typography my={1}>{conditions.main.temp_min.toFixed(0)}°C</Typography>
                 <Typography my={1}>{conditions.wind.speed.toFixed(0)} km/h</Typography>
                 <Typography my={1}>{conditions.main.humidity}%</Typography>
-                <Typography>{date.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</Typography>
+                <Typography>{date.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' })}</Typography>
               </Box>
             </Box>
             <Box component="div" display="flex" justifyContent="right" width={1}>

@@ -1,4 +1,4 @@
-# COMP 3123 Assignment 2
+# COMP 3123 Lab Test 2
 
 **James Tory - 101049351**
 

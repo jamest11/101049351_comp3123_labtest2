@@ -80,7 +80,7 @@ const WeatherConditions = ({ query }) => {
                 <Typography fontWeight="bold" my={1}>Min Temp</Typography>
                 <Typography fontWeight="bold" my={1}>Wind Speed</Typography>
                 <Typography fontWeight="bold" my={1}>Humidity</Typography>
-                <Typography fontWeight="bold" my={1}>Last Update</Typography>
+                <Typography fontWeight="bold" my={1}>Last Updated</Typography>
               </Box>
               <Box component="div" align="right" flex={1}>
                 <Typography my={1}>{conditions.main.feels_like.toFixed(0)}°C</Typography>

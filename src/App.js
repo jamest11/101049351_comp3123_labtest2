@@ -19,9 +19,9 @@ const App = () => {
     <Container component="main">
       <Box component={Paper} sx={{width: 'fit-content', mx: 'auto', my: 2, p: 4, borderRadius: 10}}>
         <Box display="flex" flexDirection="column" alignItems="center">
-          <Typography variant="h4" mb={2}>Toronto Weather Conditions</Typography>
+          <Typography variant="h4" mb={2}>Toronto Weather</Typography>
           <WeatherConditions query={'Toronto'}/>
-          <Typography variant="h4" my={2}>City Weather Search</Typography>
+          <Typography variant="h4" my={2}>Weather Search</Typography>
           <Box width="fit-content" minWidth={300} mb={2} borderRadius={5}>
             <FormGroup row sx={{gap: 2}}>
               <TextField onChange={handleChange} variant="outlined"></TextField>

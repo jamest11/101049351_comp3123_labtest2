@@ -60,7 +60,7 @@ const WeatherConditions = ({ query }) => {
             sx={{
               display: 'flex', flexDirection: 'column', align: 'flex-start', overflowWrap: 'anywhere',
               width: 'fit-content', minWidth: 160,  minHeight: 200, maxWidth: 200,
-              py: 2, px: 3, backgroundColor: '#b3e5fc', borderRadius: 10
+              py: 2, px: 3, backgroundColor: '#cfd8dc', borderRadius: 10
             }}
           >
             {conditions && (
